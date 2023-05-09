@@ -39,61 +39,221 @@ class _FirstScreenState extends State<FirstScreen> {
                         color: Colors.white,
                         child: Column(
                           children: [
-                            Text(
-                              users[index].nom,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Nom  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 190,
+                                  ),
+                                  Text(
+                                    users[index].nom,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Text(
-                              users[index].prenom,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            SizedBox(
+                              height: 12,
                             ),
-                            Text(
-                              users[index].email,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Prenom  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 135,
+                                  ),
+                                  Text(
+                                    users[index].prenom,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Text(
-                              users[index].estUrgent,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            SizedBox(
+                              height: 12,
                             ),
-                            Text(
-                              users[index].date_Dep,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Email  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 90,
+                                  ),
+                                  Text(
+                                    users[index].email,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Text(
-                              users[index].adresse_Dep,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            SizedBox(
+                              height: 12,
                             ),
-                            Text(
-                              users[index].adresse_Arriv,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'estUrgent  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 150,
+                                  ),
+                                  Text(
+                                    users[index].estUrgent,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Text(
-                              users[index].condTransp,
-                              style: const TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            SizedBox(
+                              height: 12,
+                            ),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Date Dép  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 100,
+                                  ),
+                                  Text(
+                                    users[index].date_Dep,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 12,
+                            ),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Adresse Dep  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    users[index].adresse_Dep,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 12,
+                            ),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Adresse Arriv  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 100,
+                                  ),
+                                  Text(
+                                    users[index].adresse_Arriv,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 12,
+                            ),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Cond Transp  :',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  SizedBox(
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    users[index].condTransp,
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 12,
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(
