@@ -6,7 +6,7 @@ import 'dart:convert';
 
 void updateheureDebut(id, heureDebut) async {
   final response = await http.put(
-      Uri.parse('http://192.168.59.171:8000/api/updateheurefin/$id'),
+      Uri.parse('http://192.168.1.134:8000/api/updateheuredeb/$id'),
       headers: <String, String>{
         'content-type': 'application/json',
         'accept': 'application/json',
