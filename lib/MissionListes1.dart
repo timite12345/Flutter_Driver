@@ -1,7 +1,6 @@
 // ignore_for_file: sort_child_properties_last, prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:driver_app/API/getAllMission.dart';
-import 'package:driver_app/D%C3%A9tailsMission.dart';
 import 'package:driver_app/MissionListes.dart';
 import 'package:flutter/material.dart';
 
