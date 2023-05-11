@@ -34,6 +34,7 @@ class _MapsSlidingUpState extends State<MapsSlidingUp> {
         panelBuilder: (controller) => PanelWidget(
           controller: controller,
           panelController: panelController,
+          id: '',
         ),
         borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
       ),

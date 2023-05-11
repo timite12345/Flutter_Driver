@@ -99,12 +99,12 @@ class SocialPage extends StatelessWidget {
                           SizedBox(height: 30),
                           ElevatedButton(
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => FirstScreen(),
-                                  ),
-                                );
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //     builder: (context) => FirstScreen(),
+                                //   ),
+                                // );
                               },
                               style: ElevatedButton.styleFrom(
                                 shape: StadiumBorder(),

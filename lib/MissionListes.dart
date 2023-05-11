@@ -5,12 +5,9 @@ import 'API/getAllMission.dart';
 import 'API/putHeureDebut.dart';
 
 class FirstScreen extends StatefulWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  const FirstScreen(id, {Key? key, required this.id1}) : super(key: key);
 
-  get id => null;
-
-  // get id => null;
-
+  final id1;
   @override
   _FirstScreenState createState() => _FirstScreenState();
 }
@@ -51,7 +48,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 190,
+                                    width: 90,
                                   ),
                                   Text(
                                     users[index].nom,
@@ -105,7 +102,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 90,
+                                    width: 30,
                                   ),
                                   Text(
                                     users[index].email,
@@ -262,8 +259,17 @@ class _FirstScreenState extends State<FirstScreen> {
                                 children: [
                                   ElevatedButton(
                                     onPressed: () {
-                                      var hd = DateTime.now().toString();
-                                      updateheureDebut(widget.id, hd);
+                                      // var hd = DateTime.now().toString();
+                                      // updateheureDebut(widget.id, hd);
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => FirstScreen(
+                                            widget.id1,
+                                            id1: widget.id1,
+                                          ),
+                                        ),
+                                      );
                                     },
                                     style: ElevatedButton.styleFrom(
                                         backgroundColor: Colors.green),

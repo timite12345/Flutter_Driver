@@ -1,16 +1,20 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:driver_app/API/getAllHopital.dart';
+import 'package:driver_app/API/putHeureDebut.dart';
+import 'package:driver_app/D%C3%A9tailsMission.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class PanelWidget extends StatefulWidget {
   final ScrollController controller;
   final PanelController panelController;
+  final String id;
   const PanelWidget({
     Key? key,
     required this.controller,
     required this.panelController,
+    required this.id,
   }) : super(key: key);
   Widget build(BuildContext context) => ListView(
         padding: EdgeInsets.zero,
@@ -215,6 +219,54 @@ class _PanelWidgetState extends State<PanelWidget> {
                                       color: Colors.black,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Container(
+                            child: Row(
+                              children: [
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.green),
+                                  child: Text(
+                                    'Début ',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  onPressed: () {
+                                    var hd = DateTime.now().toString();
+                                    updateheureDebut(widget.id, hd);
+                                    // Navigator.push(
+                                    //     context,
+                                    //     MaterialPageRoute(
+                                    //       builder: (context) =>
+                                    //           DetailsMission(),
+                                    //     ));
+                                  },
+                                ),
+                                SizedBox(
+                                  width: 120,
+                                ),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: Colors.red,
+                                  ),
+                                  child: Text(
+                                    'Fin ',
+                                    style: TextStyle(
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black),
+                                  ),
+                                  onPressed: () {},
                                 )
                               ],
                             ),
