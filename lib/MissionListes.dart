@@ -1,8 +1,8 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, avoid_unnecessary_containers, prefer_const_constructors
 
+import 'package:driver_app/MapsSlinding.dart';
 import 'package:flutter/material.dart';
 import 'API/getAllMission.dart';
-import 'API/putHeureDebut.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen(id, {Key? key, required this.id1}) : super(key: key);
@@ -17,11 +17,17 @@ class _FirstScreenState extends State<FirstScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Missions'),
+          centerTitle: true,
+          backgroundColor: Colors.lightBlue.shade900,
+          elevation: 0,
+          title: const Text(
+            'Missions',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         body: Container(
           color: Colors.grey,
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.symmetric(vertical: 50),
           child: FutureBuilder<List<Mission>>(
             future: getAllMission(),
             builder: (context, snapshot) {
@@ -39,8 +45,11 @@ class _FirstScreenState extends State<FirstScreen> {
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
-                                    'Nom  :',
+                                    'Nom                    :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -48,7 +57,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 90,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].nom,
@@ -66,8 +75,11 @@ class _FirstScreenState extends State<FirstScreen> {
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
-                                    'Prenom  :',
+                                    'Prenom              :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -75,7 +87,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 135,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].prenom,
@@ -93,8 +105,11 @@ class _FirstScreenState extends State<FirstScreen> {
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
-                                    'Email  :',
+                                    'estUrgent          :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -102,34 +117,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 30,
-                                  ),
-                                  Text(
-                                    users[index].email,
-                                    style: const TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            SizedBox(
-                              height: 12,
-                            ),
-                            Container(
-                              child: Row(
-                                children: [
-                                  Text(
-                                    'estUrgent  :',
-                                    style: TextStyle(
-                                        fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                        color: Colors.black),
-                                  ),
-                                  SizedBox(
-                                    width: 150,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].estUrgent,
@@ -147,8 +135,11 @@ class _FirstScreenState extends State<FirstScreen> {
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
-                                    'Date Dép  :',
+                                    'Date Dép           :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -156,7 +147,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 100,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].date_Dep,
@@ -174,8 +165,11 @@ class _FirstScreenState extends State<FirstScreen> {
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
-                                    'Adresse Dep  :',
+                                    'Adresse Dep    :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -183,7 +177,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 120,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].adresse_Dep,
@@ -201,6 +195,9 @@ class _FirstScreenState extends State<FirstScreen> {
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
                                     'Adresse Arriv  :',
                                     style: TextStyle(
@@ -210,7 +207,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 100,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].adresse_Arriv,
@@ -222,14 +219,17 @@ class _FirstScreenState extends State<FirstScreen> {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
                             Container(
                               child: Row(
                                 children: [
+                                  SizedBox(
+                                    width: 20,
+                                  ),
                                   Text(
-                                    'Cond Transp  :',
+                                    'Cond Transp    :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -237,7 +237,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         color: Colors.black),
                                   ),
                                   SizedBox(
-                                    width: 120,
+                                    width: 40,
                                   ),
                                   Text(
                                     users[index].condTransp,
@@ -254,7 +254,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 20, vertical: 20),
+                                  horizontal: 20, vertical: 30),
                               child: Row(
                                 children: [
                                   ElevatedButton(
@@ -264,10 +264,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => FirstScreen(
-                                            widget.id1,
-                                            id1: widget.id1,
-                                          ),
+                                          builder: (context) => MapsSlidingUp(),
                                         ),
                                       );
                                     },

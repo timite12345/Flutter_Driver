@@ -22,7 +22,16 @@ class _MissionListes1State extends State<MissionListes1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Missions'),
+        centerTitle: true,
+        backgroundColor: Colors.lightBlue.shade900,
+        elevation: 0,
+        title: const Text(
+          'Missions',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 23,
+          ),
+        ),
       ),
       body: Container(
         color: Colors.grey,
@@ -48,34 +57,46 @@ class _MissionListes1State extends State<MissionListes1> {
                         },
                         child: Column(
                           children: [
-                            Card(
-                              child: Padding(
-                                padding: EdgeInsets.all(25),
-                                child: Container(
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'Nom Hopital:',
-                                        style: TextStyle(
-                                          fontStyle: FontStyle.normal,
-                                          fontWeight: FontWeight.bold,
+                            Padding(
+                              padding: EdgeInsets.symmetric(vertical: 20),
+                              child: Card(
+                                color: Colors.lightBlue.shade900,
+                                shape: StadiumBorder(),
+                                child: Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Container(
+                                    child: Row(
+                                      children: [
+                                        SizedBox(
+                                          width: 75,
                                         ),
-                                      ),
-                                      SizedBox(
-                                        width: 120,
-                                      ),
-                                      Text(
-                                        users[index].nom,
-                                        style: TextStyle(
-                                          fontStyle: FontStyle.normal,
-                                          fontWeight: FontWeight.bold,
+                                        Text(
+                                          'Transport ',
+                                          textAlign: TextAlign.right,
+                                          style: TextStyle(
+                                            fontStyle: FontStyle.normal,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                            fontSize: 23,
+                                          ),
                                         ),
-                                      ),
-                                    ],
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        Text(
+                                          users[index].id,
+                                          style: TextStyle(
+                                              fontStyle: FontStyle.normal,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 23,
+                                              color: Colors.white),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
+                                elevation: 5,
                               ),
-                              elevation: 10,
                             ),
                           ],
                         ),

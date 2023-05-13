@@ -43,7 +43,7 @@ class Mission {
 
 final String apiUrl = "http://192.168.1.134:8000/api/mission";
 
-Future<List<Mission>> getAllMission({required String id}) async {
+Future<List<Mission>> getAllMission() async {
   final response = await http.get(Uri.parse(apiUrl));
   if (response.statusCode == 200) {
     final item = json.decode(response.body).cast<Map<String, dynamic>>();

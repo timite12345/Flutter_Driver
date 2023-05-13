@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:driver_app/MapsSlinding.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,6 +11,8 @@ class SocialPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // sa particularité Ce widget est capable d'occuper tout l'écran
+      // de l'appareil. c'est un widget père auquel s'accroche tout les autres
       body: SingleChildScrollView(
         child: Container(
           margin: const EdgeInsets.symmetric(

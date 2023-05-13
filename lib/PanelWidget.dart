@@ -2,7 +2,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:driver_app/API/getAllHopital.dart';
 import 'package:driver_app/API/putHeureDebut.dart';
-import 'package:driver_app/D%C3%A9tailsMission.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
@@ -233,7 +232,7 @@ class _PanelWidgetState extends State<PanelWidget> {
                                   style: ElevatedButton.styleFrom(
                                       backgroundColor: Colors.green),
                                   child: Text(
-                                    'Début ',
+                                    'Fin        ',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
@@ -259,7 +258,7 @@ class _PanelWidgetState extends State<PanelWidget> {
                                     backgroundColor: Colors.red,
                                   ),
                                   child: Text(
-                                    'Fin ',
+                                    'Annuler ',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
                                         fontWeight: FontWeight.bold,
