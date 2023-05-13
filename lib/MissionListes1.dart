@@ -5,8 +5,10 @@ import 'package:driver_app/MissionListes.dart';
 import 'package:flutter/material.dart';
 
 class MissionListes1 extends StatefulWidget {
-  final id;
-  const MissionListes1({super.key, this.id});
+//  final id;
+  const MissionListes1({
+    super.key,
+  });
 
   @override
   State<MissionListes1> createState() => _MissionListes1State();
@@ -15,7 +17,6 @@ class MissionListes1 extends StatefulWidget {
 class _MissionListes1State extends State<MissionListes1> {
   void initState() {
     super.initState();
-    widget.id;
   }
 
   @override
@@ -50,8 +51,9 @@ class _MissionListes1State extends State<MissionListes1> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) =>
-                                  FirstScreen(id1: widget.id, widget.id),
+                              builder: (context) => FirstScreen(
+                                id1: users[index].id,
+                              ),
                             ),
                           );
                         },
