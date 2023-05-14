@@ -13,6 +13,6 @@ void updateheureFin(id, heureFin) async {
         'Authorization': 'Bearer '
       },
       body: jsonEncode(<String, String>{
-        'heureDebut': heureFin,
+        'heureFin': heureFin,
       }));
 }
