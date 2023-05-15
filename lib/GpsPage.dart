@@ -26,8 +26,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text("Maps pour vous Guider"),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.lightBlue.shade900,
+        elevation: 0,
       ),
       body: Stack(children: [
         SlidingUpPanel(

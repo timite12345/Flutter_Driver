@@ -1,6 +1,6 @@
-// ignore_for_file: unused_field, library_private_types_in_public_api
+// ignore_for_file: unused_field, library_private_types_in_public_api, prefer_const_constructors
 
-import 'package:driver_app/ChauffeurListes.dart';
+import 'package:driver_app/ChauffeurListes1.dart';
 import 'package:driver_app/MissionListes1.dart';
 import 'package:driver_app/ProfilePage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -22,11 +22,12 @@ class _ChoixPageState extends State<ChoixPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text('Menu'),
-        backgroundColor: Colors.green[300],
+        backgroundColor: Colors.lightBlue.shade900,
         elevation: 0,
       ),
-      backgroundColor: Colors.green[100],
+      backgroundColor: Colors.lightBlue.shade900,
       //Commence ici les trois traits sur la nav Bar
       drawer: Drawer(
         child: ListView(children: [
@@ -130,7 +131,7 @@ class _ChoixPageState extends State<ChoixPage> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const ChauffeurListe()));
+                          builder: (context) => const ChauffeurListes1()));
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -141,12 +142,12 @@ class _ChoixPageState extends State<ChoixPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
                       Icon(
-                        Icons.car_rental,
+                        Icons.person,
                         size: 50,
                         color: Colors.red,
                       ),
                       Text(
-                        "Ambulances",
+                        "Chauffeurs",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 25,
