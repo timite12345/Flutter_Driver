@@ -41,7 +41,7 @@ class Mission {
   }
 }
 
-final String apiUrl = "http://192.168.1.134:8000/api/mission";
+final String apiUrl = "http://192.168.1.105:8000/api/mission";
 
 Future<List<Mission>> getAllMission() async {
   final response = await http.get(Uri.parse(apiUrl));

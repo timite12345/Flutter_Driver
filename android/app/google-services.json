@@ -7,7 +7,7 @@
   },
   "client": [
     {
-      "client_info": {
+      "client_info": { 
         "mobilesdk_app_id": "1:1069842043655:android:4975db7a0b07040f0ceba2",
         "android_client_info": {
           "package_name": "Dashboard.project_fsm"

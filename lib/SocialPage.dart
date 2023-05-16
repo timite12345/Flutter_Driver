@@ -1,6 +1,5 @@
-// ignore_for_file: sized_box_for_whitespace
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
 
-import 'package:driver_app/MapsSlinding.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'ChoixPage.dart';
@@ -17,7 +16,7 @@ class SocialPage extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 0,
-            vertical: 10,
+            vertical: 20,
           ),
           child: Column(
             children: [
@@ -34,7 +33,7 @@ class SocialPage extends StatelessWidget {
                   children: Container(
                       child: Container(
                           margin: const EdgeInsets.symmetric(
-                            vertical: 40,
+                            vertical: 60,
                             horizontal: 30,
                           ),
                           child: Column(
@@ -43,17 +42,17 @@ class SocialPage extends StatelessWidget {
                                 "Ordres de Mission",
                                 style: TextStyle(
                                   fontSize: 50,
-                                  fontWeight: FontWeight.bold,
+                                  // fontWeight: FontWeight.bold,
                                   fontFamily: "Biscuit",
                                   fontStyle: FontStyle.italic,
                                 ),
                               ),
-                              SizedBox(height: 0),
+                              SizedBox(height: 5),
                               Text(
                                 "Laissez-nous vous guider :",
                                 textAlign: TextAlign.center,
                                 style: GoogleFonts.poppins(
-                                  color: Colors.grey,
+                                  color: Colors.black,
                                   fontSize: 20,
                                 ),
                               ),
@@ -80,7 +79,7 @@ class SocialPage extends StatelessWidget {
                               style: ElevatedButton.styleFrom(
                                 shape: StadiumBorder(),
                                 primary: Colors.indigo,
-                                padding: const EdgeInsets.all(13),
+                                padding: const EdgeInsets.all(20),
                               ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -112,7 +111,7 @@ class SocialPage extends StatelessWidget {
                               style: ElevatedButton.styleFrom(
                                 shape: StadiumBorder(),
                                 primary: Colors.blueGrey,
-                                padding: const EdgeInsets.all(13),
+                                padding: const EdgeInsets.all(20),
                               ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -128,40 +127,40 @@ class SocialPage extends StatelessWidget {
                                   ),
                                 ],
                               )),
-                          SizedBox(height: 30),
-                          ElevatedButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => MapsSlidingUp(),
-                                  ),
-                                );
-                              },
-                              style: ElevatedButton.styleFrom(
-                                shape: StadiumBorder(),
-                                primary: Colors.blueAccent,
-                                padding: const EdgeInsets.all(15),
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.add_alert_outlined,
-                                    color: Colors.red,
-                                  ),
-                                  SizedBox(width: 10),
-                                  Text(
-                                    "Envoyer Alertes",
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
-                              )),
-                          SizedBox(height: 30),
+                          // SizedBox(height: 30),
+                          // ElevatedButton(
+                          //     onPressed: () {
+                          //       Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //           builder: (context) => MapsSlidingUp(),
+                          //         ),
+                          //       );
+                          //     },
+                          //     style: ElevatedButton.styleFrom(
+                          //       shape: StadiumBorder(),
+                          //       primary: Colors.blueAccent,
+                          //       padding: const EdgeInsets.all(15),
+                          //     ),
+                          //     child: Row(
+                          //       mainAxisAlignment: MainAxisAlignment.center,
+                          //       children: [
+                          //         Icon(
+                          //           Icons.add_alert_outlined,
+                          //           color: Colors.red,
+                          //         ),
+                          //         SizedBox(width: 10),
+                          //         Text(
+                          //           "Envoyer Alertes",
+                          //           style: GoogleFonts.poppins(
+                          //             color: Colors.white,
+                          //             fontSize: 18,
+                          //             fontWeight: FontWeight.bold,
+                          //           ),
+                          //         ),
+                          //       ],
+                          //     )),
+                          // SizedBox(height: 30),
                         ],
                       )))
             ],

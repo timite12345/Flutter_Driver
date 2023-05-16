@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, unused_local_variable, sort_child_properties_last
+// ignore_for_file: file_names, unused_local_variable, sort_child_properties_last, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -34,7 +34,7 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.blue.shade200,
+        backgroundColor: Colors.lightBlue.shade900,
         leading: const SizedBox(),
         // On Android it's false by default
         centerTitle: true,
@@ -50,7 +50,7 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                   clipper: CustomShape(),
                   child: Container(
                     height: 150, //150
-                    color: Colors.blue.shade200,
+                    color: Colors.lightBlue.shade900,
                   ),
                 ),
                 Center(
@@ -79,7 +79,10 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                               left: 60,
                               child: RawMaterialButton(
                                 elevation: 10,
-                                child: const Icon(Icons.add_a_photo),
+                                child: Icon(
+                                  Icons.add_a_photo,
+                                  color: Colors.lightBlue.shade900,
+                                ),
                                 padding: const EdgeInsets.all(1.0),
                                 shape: const CircleBorder(),
                                 onPressed: () {
@@ -99,8 +102,8 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                                               children: [
                                                 InkWell(
                                                     onTap: () => picImage(),
-                                                    splashColor:
-                                                        Colors.blue.shade200,
+                                                    splashColor: Colors
+                                                        .lightBlue.shade900,
                                                     child: Row(
                                                       children: [
                                                         Padding(
@@ -109,8 +112,9 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                                                                     .all(8.0),
                                                             child: Icon(
                                                               Icons.camera,
-                                                              color: Colors.blue
-                                                                  .shade200,
+                                                              color: Colors
+                                                                  .lightBlue
+                                                                  .shade900,
                                                             )),
                                                         const Text(
                                                           "Camera",
@@ -126,8 +130,8 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                                                     )),
                                                 InkWell(
                                                     onTap: () => pickImage(),
-                                                    splashColor:
-                                                        Colors.blue.shade200,
+                                                    splashColor: Colors
+                                                        .lightBlue.shade900,
                                                     child: Row(
                                                       children: [
                                                         Padding(
@@ -136,8 +140,9 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                                                                     .all(8.0),
                                                             child: Icon(
                                                               Icons.image,
-                                                              color: Colors.blue
-                                                                  .shade200,
+                                                              color: Colors
+                                                                  .lightBlue
+                                                                  .shade900,
                                                             )),
                                                         const Text(
                                                           "Gallery",
@@ -153,8 +158,8 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                                                     )),
                                                 InkWell(
                                                     onTap: () => picImage(),
-                                                    splashColor:
-                                                        Colors.blue.shade200,
+                                                    splashColor: Colors
+                                                        .lightBlue.shade900,
                                                     child: Row(
                                                       children: [
                                                         Padding(
@@ -164,8 +169,9 @@ class _EditerProfilesPageState extends State<EditerProfilesPage> {
                                                             child: Icon(
                                                               Icons
                                                                   .remove_circle,
-                                                              color: Colors.blue
-                                                                  .shade200,
+                                                              color: Colors
+                                                                  .lightBlue
+                                                                  .shade900,
                                                             )),
                                                         const Text(
                                                           "Supprimer",

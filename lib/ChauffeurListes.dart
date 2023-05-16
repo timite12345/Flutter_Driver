@@ -244,7 +244,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                   ElevatedButton(
                                     onPressed: () {},
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.green),
+                                        backgroundColor:
+                                            Colors.lightBlue.shade900),
                                     child: const Text(
                                       'Contacter',
                                       style: TextStyle(

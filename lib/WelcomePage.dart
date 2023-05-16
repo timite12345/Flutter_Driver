@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use
+
 import 'package:driver_app/LoginPage1.dart';
 import 'package:flutter/material.dart';
 import 'Delay_animation.dart';
@@ -13,12 +15,12 @@ class WelcomePage extends StatelessWidget {
     // var textAlign;
     // var GoogleFonts;
     return Scaffold(
-      backgroundColor: const Color(0xFFEDECF2),
+      backgroundColor: Colors.lightBlue.shade900,
       body: SingleChildScrollView(
         child: Container(
             margin: const EdgeInsets.symmetric(
-              vertical: 100,
-              horizontal: 5,
+              vertical: 70,
+              horizontal: 20,
             ),
             child: Column(children: [
               DelayedAnimation(
@@ -35,17 +37,17 @@ class WelcomePage extends StatelessWidget {
                 duration: 1500,
                 children: Container(
                   margin: const EdgeInsets.only(
-                    top: 60,
+                    top: 80,
                     bottom: 30,
                   ),
                   child: const Text(
                     "Bienvenue",
                     style: TextStyle(
-                      fontSize: 63,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 60,
+                      //fontWeight: FontWeight.bold,
                       fontFamily: "Biscuit",
                       fontStyle: FontStyle.italic,
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -58,21 +60,19 @@ class WelcomePage extends StatelessWidget {
                 duration: 1600,
                 children: Container(
                   margin: const EdgeInsets.symmetric(
-                    horizontal: 25,
-                    vertical: 10,
+                    horizontal: 5,
+                    vertical: 0,
                   ),
                   width: 350,
                   child: Column(
                     children: [
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.blueAccent,
+                            primary: Colors.white,
                             shape: const StadiumBorder(),
                             padding: EdgeInsets.all(13)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-
-                          // ignore: prefer_const_literals_to_create_immutables
                           children: [
                             const SizedBox(
                               width: 10,
@@ -80,9 +80,9 @@ class WelcomePage extends StatelessWidget {
                             const Text(
                               "Commencer",
                               style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black),
                             ),
                           ],
                         ),

@@ -34,7 +34,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.blue.shade200,
+        backgroundColor: Colors.lightBlue.shade900,
         leading: const SizedBox(),
         centerTitle: true,
         title: const Text("Profile"),
@@ -68,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
               clipper: CustomShape(),
               child: Container(
                 height: 150, //150
-                color: Colors.blue.shade200,
+                color: Colors.lightBlue.shade900,
               ),
             ),
             Center(
@@ -98,7 +98,10 @@ class _ProfilePageState extends State<ProfilePage> {
                           left: 60,
                           child: RawMaterialButton(
                             elevation: 10,
-                            child: const Icon(Icons.add_a_photo),
+                            child: Icon(
+                              Icons.add_a_photo,
+                              color: Colors.lightBlue.shade900,
+                            ),
                             padding: const EdgeInsets.all(1.0),
                             shape: const CircleBorder(),
                             onPressed: () {
@@ -119,7 +122,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                             InkWell(
                                                 onTap: () => picImage(),
                                                 splashColor:
-                                                    Colors.blue.shade200,
+                                                    Colors.lightBlue.shade900,
                                                 child: Row(
                                                   children: [
                                                     Padding(
@@ -129,7 +132,8 @@ class _ProfilePageState extends State<ProfilePage> {
                                                         child: Icon(
                                                           Icons.camera,
                                                           color: Colors
-                                                              .blue.shade200,
+                                                              .lightBlue
+                                                              .shade900,
                                                         )),
                                                     const Text(
                                                       "Camera",
@@ -145,7 +149,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                             InkWell(
                                                 onTap: () => pickImage(),
                                                 splashColor:
-                                                    Colors.blue.shade200,
+                                                    Colors.lightBlue.shade900,
                                                 child: Row(
                                                   children: [
                                                     Padding(
@@ -155,7 +159,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                                       child: Icon(
                                                         Icons.image,
                                                         color: Colors
-                                                            .blue.shade200,
+                                                            .lightBlue.shade900,
                                                       ),
                                                     ),
                                                     const Text(
@@ -182,7 +186,8 @@ class _ProfilePageState extends State<ProfilePage> {
                                                         child: Icon(
                                                           Icons.remove_circle,
                                                           color: Colors
-                                                              .blue.shade200,
+                                                              .lightBlue
+                                                              .shade900,
                                                         )),
                                                     const Text(
                                                       "Supprimer",
