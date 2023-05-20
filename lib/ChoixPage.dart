@@ -142,12 +142,12 @@ class _ChoixPageState extends State<ChoixPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
                       Icon(
-                        Icons.person,
+                        Icons.add_alert_rounded,
                         size: 50,
                         color: Colors.red,
                       ),
                       Text(
-                        "Chauffeurs",
+                        "Alertes",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 25,
