@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_const, avoid_print, unused_field, unused_element, unused_local_variable, prefer_const_constructors
+// ignore_for_file: unused_field, unused_local_variable
 
 import 'package:driver_app/SocialPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -8,7 +8,6 @@ import 'package:google_fonts/google_fonts.dart';
 class HommePage extends StatefulWidget {
   const HommePage({Key? key}) : super(key: key);
   @override
-  // ignore: library_private_types_in_public_api
   _LoginState createState() => _LoginState();
 }
 

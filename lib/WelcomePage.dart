@@ -5,15 +5,10 @@ import 'package:flutter/material.dart';
 import 'Delay_animation.dart';
 
 class WelcomePage extends StatelessWidget {
-  //get vertical => null;
-
-  // get horizontal => null;
+  const WelcomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // var top;
-    // var textAlign;
-    // var GoogleFonts;
     return Scaffold(
       backgroundColor: Colors.lightBlue.shade900,
       body: SingleChildScrollView(
