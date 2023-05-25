@@ -56,7 +56,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'Nom                    :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        //fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
@@ -86,7 +86,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'Prenom              :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        // fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
@@ -116,7 +116,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'estUrgent          :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        // fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
@@ -146,7 +146,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'Date Dép           :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        //fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
@@ -176,7 +176,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'Adresse Dep    :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        //fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
@@ -206,7 +206,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'Adresse Arriv  :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        // fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
@@ -236,7 +236,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                     'Cond Transp    :',
                                     style: TextStyle(
                                         fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.bold,
+                                        // fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black),
                                   ),
